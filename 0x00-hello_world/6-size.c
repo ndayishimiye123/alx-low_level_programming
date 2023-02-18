@@ -2,6 +2,7 @@
 /**
  * main - the char of this number 
  * Return: Always 0 (Succes)
+ */
 int main() {
 printf("Size of a char: %lu byte(s)\n", sizeof(char));
 printf("Size of an int: %lu byte(s)\n", sizeof(int));
