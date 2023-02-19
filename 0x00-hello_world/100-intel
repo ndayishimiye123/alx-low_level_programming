@@ -1,3 +1,10 @@
 #!/bin/bash
-gcc -S -masm=intel $CFILE
 
+# Get the C file name from the environment variable CFILE
+cfile="$CFILE"
+
+# Set the output file name to the same as the C file, but with the .s extension
+outfile="${cfile%.c}.s"
+
+# Generate the assembly code using GCC with the -S flag
+gcc -S -masm=intel "$cfile" -o "$outfile"
