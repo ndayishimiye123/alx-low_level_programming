@@ -1,11 +1,8 @@
-#include <stdio.h>
-/**
- * main - - Entry the correct point
- *
- * Return: Always 0 (Success)
- */
+#include <unistd.h>
+
 int main(void)
 {
-fputs("and that piece of art is useful\" - Dore korpar, 2015-10-19\n", stdout);
-return (0);
+  char str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+  write(2, str, sizeof(str) - 1);
+  return (1);
 }
