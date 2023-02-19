@@ -9,7 +9,7 @@ int main(void)
 int i, j;
 for (i = 0; i < 100; i++)
 {
-for (j = i + 1; j < 10; j++)
+for (j = i + 1; j < 100; j++)
 {
 putchar(i + '0');
 putchar(j + '0');
